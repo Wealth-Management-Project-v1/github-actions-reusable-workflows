@@ -1,0 +1,12 @@
+name: Common-Docker-Build
+on:
+  workflow_call:
+
+jobs:
+  Docker-Build:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v6
+      - name: Docker build
+        run: make docker-build image_tag=${GITHUB_SHA}
