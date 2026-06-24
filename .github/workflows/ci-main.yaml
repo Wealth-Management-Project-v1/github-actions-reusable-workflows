@@ -13,7 +13,6 @@ jobs:
 
   Test-Cases:
     runs-on: self-hosted
-    needs: Docker-Build
     steps:
       - uses: actions/checkout@v6
       - name: Build
