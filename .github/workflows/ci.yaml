@@ -22,6 +22,7 @@ jobs:
   Dev-Deploy:
     needs: Test-Cases
     runs-on: self-hosted
+    environment: Dev
     steps:
       - uses: actions/checkout@v6
       - uses: actions/checkout@v6
