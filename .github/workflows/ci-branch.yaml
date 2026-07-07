@@ -1,6 +1,6 @@
 name: CI-MAIN-Analytics-Service
 on:
-  push:
+  workflow_call:
     branches-ignore:
       - main
   workflow_dispatch:
