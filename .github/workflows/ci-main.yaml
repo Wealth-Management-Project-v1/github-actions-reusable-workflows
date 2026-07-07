@@ -30,7 +30,7 @@ jobs:
           path: helm
       - name: Helm deploy
         run: |
-          make argo-deploy image_tag=${GITHUB_SHA}
+          make argocd-deploy image_tag=${GITHUB_SHA}
 
   QA-Deploy:
     runs-on: self-hosted
