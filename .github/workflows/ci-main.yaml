@@ -29,7 +29,9 @@ jobs:
           repository: Wealth-Management-Project-v1/helm-v1
           path: helm
       - name: Helm deploy
-        run: make argo-deploy image_tag=${GITHUB_SHA}
+        run: |
+          
+          make argo-deploy image_tag=${GITHUB_SHA}
 
   QA-Deploy:
     runs-on: self-hosted
